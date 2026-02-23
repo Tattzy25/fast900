@@ -1,0 +1,32 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "My Zuplo API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/path-1": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "post": {
+        "summary": "New Route",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlForwardHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "baseUrl": "https://api.pushcut.io/xVL1FlD1bXA75Fu8fZBRS/widgets/Widget?content=Contenthttps://api.pushcut.io/xVL1FlD1bXA75Fu8fZBRS/widgets/Widget?content=Content"
+            }
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "new-route-c10404fc"
+      }
+    }
+  }
+}
