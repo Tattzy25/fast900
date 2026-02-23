@@ -1,16 +1,16 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "version": "1.0.0",
-    "title": "My Zuplo API"
+    "title": "My Zuplo API",
+    "version": "1.0.0"
   },
   "paths": {
-    "/path-0": {
+    "/path-1": {
       "x-zuplo-path": {
         "pathMode": "open-api"
       },
-      "get": {
-        "summary": "Get All ToDo",
+      "post": {
+        "summary": "New Route",
         "description": "",
         "x-zuplo-route": {
           "corsPolicy": "none",
@@ -18,17 +18,14 @@
             "export": "urlForwardHandler",
             "module": "$import(@zuplo/runtime)",
             "options": {
-              "baseUrl": "https://echo.zuplo.io"
+              "baseUrl": "https://api.pushcut.io/xVL1FlD1bXA75Fu8fZBRS/widgets/Widget?content=Contenthttps://api.pushcut.io/xVL1FlD1bXA75Fu8fZBRS/widgets/Widget?content=Content"
             }
           },
           "policies": {
-            "inbound": [
-              "api-key-inbound",
-              "rate-limit-inbound"
-            ]
+            "inbound": []
           }
         },
-        "operationId": "new-route-bcfa09ab"
+        "operationId": "new-route-c10404fc"
       }
     }
   }
